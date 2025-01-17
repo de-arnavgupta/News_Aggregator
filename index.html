@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>News Aggregator</h1>
+</header>
+
+<div class="search-container">
+    <div class="search-box">
+        <input type="search" id="searchInput" placeholder="Search news...">
+        <select id="categorySelect">
+            <option value="">All Categories</option>
+            <option value="business">Business</option>
+            <option value="technology">Technology</option>
+            <option value="sports">Sports</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="science">Science</option>
+            <option value="health">Health</option>
+        </select>
+        <select id="countrySelect">
+            <option value="">All Countries</option>
+            <option value="us">United States</option>
+            <option value="gb">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="in">India</option>
+        </select>
+        <button id="searchBtn">Search</button>
+    </div>
+</div>
+
+<div class="news-container" id="newsContainer"></div>
+
+<div class="load-more">
+    <button id="loadMoreBtn">Load More</button>
+</div>
+
+<div id="favorites" class="favorites-drawer">
+    <h2>Saved Articles</h2>
+    <div id="favoritesList"></div>
+</div>
+
+<button id="toggleFavorites" class="favorites-toggle">
+    <i class="fas fa-bookmark"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
